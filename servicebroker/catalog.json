@@ -1,0 +1,28 @@
+{
+    "services": [
+      {
+        "name": "test-bookshop",
+        "description": "Test Bookshop",
+        "tags": [
+          "Bookshop"
+        ],
+        "bindable": true,
+        "metadata": {
+          "sapservice": {
+            "sap.cloud.service": "my.bookshop",
+            "saasregistryenabled": true
+          }
+        },
+        "longDescription": "Test Bookshop",
+        "plan_updateable": true,
+        "plans": [
+          {
+            "name": "standard",
+            "description": "Standard Plan",
+            "id": "b26114d3-7e64-41d5-81c0-c13b8d40ee40"
+          }
+        ],
+        "id": "a1d32937-8ad1-43df-9f3e-23eddac1f917"
+      }
+    ]
+  }

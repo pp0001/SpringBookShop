@@ -1,0 +1,25 @@
+{
+  "name": "servicebroker",
+  "version": "1.0.0",
+  "description": "Test - BookShop Service Broker",
+  "main": "index.js",
+  "engines": {
+    "node": "^8"
+  },
+  "scripts": {
+    "start": "start-broker"
+  },
+  "repository": {},
+  "keywords": [
+    "Business",
+    "Service"
+  ],
+  "author": "SAP SE",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/sbf": "latest",
+    "@sap/xsenv": "^1.2.9",
+    "@sap/hdbext": "^5.0.0",
+    "key-del": "^1.3.0"
+  }
+}

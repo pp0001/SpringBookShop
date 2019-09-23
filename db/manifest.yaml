@@ -1,0 +1,9 @@
+---
+applications:
+  - name: bookshop-st-db
+    memory: 256M
+    buildpacks:
+      - https://github.com/cloudfoundry/nodejs-buildpack.git#v1.6.42
+    random-route: true
+    services:
+      - bookshop-st-hdi-container

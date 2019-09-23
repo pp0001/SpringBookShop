@@ -1,0 +1,32 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  datasource:
+    hikari:
+      validationTimeout: 100000
+      maximumPoolSize: 10
+#logging:
+#  level:
+#    root: DEBUG
+---
+spring:
+  profiles: default
+  datasource:
+    url: ${dburl}
+    username: ${dbuser}
+    password: ${dbpassword}
+    driverClassName: com.sap.db.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximumPoolSize: 1
+server:
+  tomcat:
+    max-threads: 1
+server.port: 8080
+---
+spring:
+  profiles: batch
+server.port: 8083
